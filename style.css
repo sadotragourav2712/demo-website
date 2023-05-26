@@ -10,7 +10,7 @@
     height:100vh;
     width:auto;
 
-    background-color:rgb(15, 15, 16);
+    /* background-color:rgb(15, 15, 16); */
     /* background-image: url(./body.webp); */
     background-position: center;
     background-size:cover;
@@ -181,13 +181,16 @@ transform: scale(1.3);
     text-align: center;
     font-size: 40px;
 }
+.product-heading {
+    font: size 505px, !important;;
+}
 .items{
     display:grid;
     grid-template-columns: repeat(3,400px);
     grid-template-rows: 320px;
     /* background-color:blue; */
-    gap:35px;
-    margin-top:25px;
+    gap:45px;
+    margin-top:45px;
     justify-content: center;
     
 }
@@ -203,6 +206,15 @@ transform: scale(1.3);
     border-radius:15px;
 
     
+}
+.item:hover{
+    background-color: rgb(246, 60, 60);
+    transform: scale(1.2);
+    transition: .7s ease;
+}
+.item p:hover{
+    color:black;
+
 }
 .item h1{
     color:lightskyblue
@@ -222,9 +234,90 @@ transform: scale(1.3);
 }
 .work{
     /* color:red; */
+    background-color: rgb(10, 7, 7);
+    
 }
 .work h1{
     color:red;
+    font-size: 60px;
+}
+.work1{
+    display: grid;
+    grid-template-columns: repeat(2,600px);
+    grid-template-rows: repeat(2,400px);
+    margin-top:45px;
+    gap:65px;
+    justify-content: center;
+}
+
+.work2 img{
+    width:600px;
+    height:400px;
+    
+}
+.work2{
+    
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+    border:4px solid white;
+}
+.work2 img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height:0%;
+    background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition:height 0.5s ;
+
+
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color:#ff004f;
+    text-decoration: none;
+    font-size:20px;
+    line-height:60px;
+    background:#fff;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    text-align:center;
+}
+.layer i{
+margin-top:-37px;
+color:red;
+
+}
+.work2:hover img{
+transform: scale(1.1);
+}
+.work2:hover .layer{
+    height: 100%;
+}
+.work2:hover{
+    transform: scale(1.2);
+    transition: .7s ease;
 }
 
 
